@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Telefônica</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+
+</head>
+<body>
+  
+  <header>
+    <img src="./img/agenda icone.png" alt="logotipo da página de uma agenda">
+    <h1>Agenda de Contatos</h1>
+</header>
+  
+<div class="container">
+  <div id="form">
+    <input type="text" id="name" placeholder="Nome" required>
+    <input type="text" id="number" placeholder="Número de Telefone" required>
+    <input type="text" id="description" placeholder="Descrição" required>
+    <button id="upload-btn">Upload Foto</button>
+    <button id="save-btn">Salvar Contato</button>
+  </div>
+
+  <div id="result"></div>
+
+  <div id="contacts">
+    <h2>Contatos</h2>
+    <table id="contacts-table">
+      <thead id="contacts-header" style="display: none;">
+        <tr>
+          <th>Foto</th>
+          <th>Nome</th>
+          <th>Número de Telefone</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="contacts-list">
+        <!-- Os contatos serão adicionados aqui dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+:root {
+  --bg-primary-color: #E7E7E7;
+  --bg-secondary-color: #207dd4e0;
+  --bg-tertiary-color: #009432;
+  --text-primary-color: #FFFFFF;
+  --button-secondary-color: #eb1313;
+  --border-primary-color: rgba(0, 0, 0, 0.1);
+  --table-primary-color: #cbe4e9;
+  
+  --large-font-size: 2.5rem;
+  --medium-font-size: 1.2rem;
+  --normal-font-size: 1.125rem;
+}
+
+/* Linhas de caderno */
+body {
+    background-color: var(--text-primary-color);
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    padding-top: 100px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+header
+{
+  background-color: var(--bg-secondary-color);
+  width: 90%;
+  margin: 72px;
+}
+
+header {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: flex-start; /* Alinha horizontalmente (pode ajustar conforme necessário) */
+  padding-inline: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+header img {
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px; /* Garante tamanho uniforme */
+  left: 20px;
+}
+
+header h1 {
+  font-size: var(--large-font-size); /* Mantém tamanho consistente */
+  color: var(--text-primary-color);
+  margin: 0;/* Remove margens que podem interferir */ 
+}
+
+
+#form {
+  margin-bottom: 20px;
+}
+
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+#contacts-list li {
+  margin: 15px 0;
+  border: 1px solid #b8b8b8;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#contacts-list img {
+  display: block; /* Mude para block para que a imagem ocupe toda a largura disponível */
+  max-width: 100px;
+  border-radius: 50px;
+  margin-right: 10px; /* Adicione margem à direita para espaçamento */
+  float: left; /* Adicione esta linha para alinhar à esquerda */
+  margin-top: 5px;
+}
+
+#contacts-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 72px;
+  border-radius: 5%;
+}
+
+#contacts-table th, #contacts-table td {
+  border: 1px solid #3c7aff;
+  padding: 8px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+#contacts-table th {
+  background-color: #207dd4e0;
+  
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px; /* Espaçamento entre os botões */
+}
+
+/* 
+#contacts-list img {
+  display: flex ;
+  max-width: 100px;
+  border-radius: 50px;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-btn.edit {
+  background-color: #FFC300;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+} */
